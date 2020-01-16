@@ -2,7 +2,7 @@
 
 
 #### Description
-- When you add an item source, it automatically suggests items for you. If the text editor is empty, it deletes the last item that is selected. You can select single or multiple items and you can customize the visuals of the selected items.
+- When you add an item source, it automatically suggests items for you. If the text editor is empty and click back button delete last selected item. You can select single or multiple items and you can customize the visuals of the selected items.
 
 
 ![](https://i.ibb.co/t8h4snJ/New-Project.jpg)
