@@ -17,7 +17,7 @@ You must add this line to your AppDelegate.cs before you use AutoCompleteTextVie
  ```csharp
 Xamarin.RisePlugin.AutoCompleteTextView.iOS.AutoCompleteTextViewRenderer.Init();
 ```
-- #####Step3  (Important)
+-#####Step3  (Important)
 You must call these properties NamePath, ItemTemplate, ItemsSource, SelectedItemsSource
 Like
 ```csharp
