@@ -11,13 +11,16 @@
 #### Usage
 
 - **Step1**
+
 Add the following NuGet package to your solution.
 - **Step2**
+
 You must add this line to your AppDelegate.cs before you use AutoCompleteTextView
  ```csharp
 Xamarin.RisePlugin.AutoCompleteTextView.iOS.AutoCompleteTextViewRenderer.Init();
 ```
 - **Step3  (Important)**
+
 You must call these properties NamePath, ItemTemplate, ItemsSource, SelectedItemsSource
 Like
 ```csharp
