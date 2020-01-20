@@ -60,21 +60,21 @@ Like
 | PlaceholderColor  | Set editor placeholder color. |
 | BorderColor  | Set editor border color. |
 | BorderThickness  | Set editor border thickness. |
-| BackButtonPressDeleteSelected  | If click back button delete last selected item |
-| SeparatorColor  | Set dropdown separator color. |
-| SeparatorThickness  | Set dropdown separator thickness. |
-| SameItemControl  | Checks selected items. If they have the same not add.(Only work SelectionMode.Multiple) |
-| NamePath  | Type the name that you will see in the dropdown |
+| BackButtonPressDeleteSelected  | Clicking back button deletes last selected item. |
+| SeparatorColor  | Set separator color dropdown. |
+| SeparatorThickness  | Set separator thickness dropdown. |
+| SameItemControl  | Checks selected items, will skip item if this is an already existing one. (Only work SelectionMode.Multiple) |
+| NamePath  | Type the name you want to show up in the dropdown. |
 | SelectionMode  | You can select none, single or multiple items. |
 | RowHeight  | Set dropdown rows height |
-| SelectAfterText  | when you select an object from the dropdown. Sets the status of the text.(Clear = clear the text, Complete = sets the name of the item you select to text, Defualt = it does nothing) |
-| ItemsSource  | The list you want to see. |
+| SelectAfterText  | Setting the status of the text when selecting an object from dropdown. (Clear = clear the text, Complete = sets the name of the item you select to text, Default = does nothing) |
+| ItemsSource  | The list you want to show up. |
 | SelectedItemsSource  | Selected item list |
-| ItemTemplate | You can customizes the visuals of the dropdown items. |
-| SelectedItemTemplate | You can customizes the visuals of the selected items. |
-| SelectItem  | When an dropdown is selected item, properties of that item and the index returns. |
-| SelectSameItem  | When an dropdown is same selected item, properties of that item and the index returns. |
-| DeletedItem  | When an delete selected item, properties of that item and the index returns. |
+| ItemTemplate | You can customize the visuals of the dropdown items. |
+| SelectedItemTemplate | You can customize the visuals of the selected items. |
+| SelectItem  | When an dropdown item is selected, properties of that item and the index returns. |
+| SelectSameItem  | When an dropdown selected item is similar, properties of that item and the index returns.  |
+| DeletedItem  | When an selected item is deleted, properties of that item and the index returns. |
 | TextChanged  | Triggered when text changes.. |
 
 
