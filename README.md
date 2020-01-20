@@ -9,10 +9,10 @@
 
 
 #### Multiple Selection
-![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif2.gif?raw=true)
+- ![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif2.gif?raw=true)
 
 #### Delete Items
-![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif1.gif?raw=true)
+- ![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif1.gif?raw=true)
 ### NugetPackage
 [https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView](https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView)
 #### Usage
@@ -72,7 +72,9 @@ Like
 | SelectedItemsSource  | Selected item list |
 | ItemTemplate | You can customizes the visuals of the dropdown items. |
 | SelectedItemTemplate | You can customizes the visuals of the selected items. |
-| ItemClicked  | When an dropdown is selected, properties of that item and the index returns. |
+| SelectItem  | When an dropdown is selected item, properties of that item and the index returns. |
+| SelectSameItem  | When an dropdown is same selected item, properties of that item and the index returns. |
+| DeletedItem  | When an delete selected item, properties of that item and the index returns. |
 | TextChanged  | Triggered when text changes.. |
 
 
