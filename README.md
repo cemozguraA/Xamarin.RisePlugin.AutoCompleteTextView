@@ -5,7 +5,7 @@
 - When you add an item source, it automatically suggests items for you. If the text editor is empty and click back button delete last selected item. You can select single or multiple items and you can customize the visuals of the selected items.
 
 
-![](https://i.ibb.co/t8h4snJ/New-Project.jpg)
+![](https://raw.githubusercontent.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/master/Images/New%20Project.png)
 ### NugetPackage
 [https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView](https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView)
 #### Usage
