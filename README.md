@@ -6,6 +6,13 @@
 
 
 ![](https://raw.githubusercontent.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/master/Images/New%20Project.png)
+
+
+#### Multiple Selection
+![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif2.gif?raw=true)
+
+#### Delete Items
+![](https://github.com/cemozguraA/Xamarin.RisePlugin.AutoCompleteTextView/blob/master/Images/gif1.gif?raw=true)
 ### NugetPackage
 [https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView](https://www.nuget.org/packages/Xamarin.RisePlugin.AutoCompleteTextView)
 #### Usage
