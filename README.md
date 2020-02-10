@@ -55,6 +55,9 @@ Like
 | Property  | What it does |
 | ------------- | ------------|
 | TextColor  | Set editor text color. |
+| FontSize  | Set editor font size. |
+| FontFamily  | Set editor font family. |
+| FontAttribute  | Set editor font FontAttribute. |
 | BackgroundColor  | Set view background color . |
 | TextBackGroundColor  | Set only  editor background color . |
 | PlaceholderColor  | Set editor placeholder color. |
