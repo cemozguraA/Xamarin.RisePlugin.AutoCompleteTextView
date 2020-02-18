@@ -85,7 +85,7 @@ Like
 | SelectedItemTemplate | You can customize the visuals of the selected items. |
 | SelectItem  | When an dropdown item is selected, properties of that item and the index returns. |
 | SelectSameItem  | When an dropdown selected item is similar, properties of that item and the index returns.  |
-| BackButtonPressDelete  | When an delete item with back button of that item and the index returns. |
+| BackButtonPressDelete  | When an delete item with back button, properties of that item and the index returns. |
 | TextChanged  | Triggered when text changes.. |
 | ClickSelectedItem  | Triggered when click selected item.. |
 
