@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AutoCompleteTextSample.MainPage"
+             xmlns:panc="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:trans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:cntlrs="clr-namespace:Xamarin.RisePlugin.AutoCompleteTextView;assembly=Xamarin.RisePlugin.AutoCompleteTextView"
+             BackgroundColor="Bisque"
+             >
+    <StackLayout >
+        <cntlrs:AutoCompleteTextView ItemsSource="{Binding .}" SeparatorColor="#333333" 
+                                    SeparatorThickness="2" BackButtonPressDeleteSelected="True"
+                                    TextColor="#80FFFFFF" BackgroundColor="#505050"
+                                    TextBackGroundColor="#505050"
+                                    PlaceHolder="Ara" PlaceHolderColor="#80CC8E1C" 
+                                    BorderColor="#CC8E1C" SameItemControl="True" 
+                                    BorderThickness="2" HeightRequest="50"
+                                    RowHeight="75"
+                                    Margin="10" x:Name="auto" NamePath="Name" 
+                                    SelectionMode="Multiple"
+                                    SelectAfterText="Clear"
+                                     FontSize="18"
+                                >
+            <cntlrs:AutoCompleteTextView.SelectedItemTemplate>
+                <DataTemplate>
+                    <panc:PancakeView BackgroundGradientStartColor="#CC8B12" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="8,0" BackgroundGradientEndColor="#CC8E1C" BackgroundGradientAngle="80" CornerRadius="15">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="5">
+                            <ff:CachedImage Source="{Binding Image}"  HeightRequest="30" WidthRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,0,0,0" Aspect="Fill">
+                                <ff:CachedImage.Transformations>
+                                    <trans:CircleTransformation></trans:CircleTransformation>
+                                </ff:CachedImage.Transformations>
+                            </ff:CachedImage>
+                            <Label Text="{Binding Name}" Margin="4" TextColor="White" FontSize="18" FontAttributes="Bold" LineBreakMode="TailTruncation" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                    </panc:PancakeView>
+                </DataTemplate>
+            </cntlrs:AutoCompleteTextView.SelectedItemTemplate>
+            <cntlrs:AutoCompleteTextView.ItemTemplate>
+                <DataTemplate>
+                    <panc:PancakeView BackgroundGradientStartColor="#CC8E1C" BackgroundGradientEndColor="#CC8E1C" BackgroundGradientAngle="80">
+                        <StackLayout Orientation="Horizontal" HeightRequest="80">
+                            <ff:CachedImage Source="{Binding Image}"  HeightRequest="80" WidthRequest="80" Margin="10" VerticalOptions="CenterAndExpand">
+                                <ff:CachedImage.Transformations>
+                                    <trans:CircleTransformation></trans:CircleTransformation>
+                                </ff:CachedImage.Transformations>
+                            </ff:CachedImage>
+                            <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="White" Margin="5"></Label>
+                        </StackLayout>
+                    </panc:PancakeView>
+                </DataTemplate>
+            </cntlrs:AutoCompleteTextView.ItemTemplate>
+        </cntlrs:AutoCompleteTextView>
+        <Button Margin="0,30" BackgroundColor="#505050" TextColor="White" Text="ADD" Clicked="Button_Clicked"></Button>
+        <Button Margin="0,30" BackgroundColor="#505050" TextColor="White" Text="REMOVE" Clicked="Button1_Clicked"></Button>
+        <Button Margin="0,30" BackgroundColor="#505050" TextColor="White" Text="CLEAR" Clicked="Button2_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
