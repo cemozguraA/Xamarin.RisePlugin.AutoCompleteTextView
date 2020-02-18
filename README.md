@@ -28,13 +28,21 @@ Xamarin.RisePlugin.AutoCompleteTextView.iOS.AutoCompleteTextViewRenderer.Init();
 ```
 - **Step3  (Important)**
 
-You must call these properties NamePath, ItemTemplate, ItemsSource, SelectedItemsSource
+You must call these properties NamePath, ItemTemplate, SelectedItemTemplate, ItemsSource, SelectedItemsSource
 Like
 ```csharp
             auto.ItemsSource = list;
             auto.SelectedItemsSource = new List<test>();
             auto.NamePath = "Text";
             auto.ItemTemplate =  new DataTemplate(() =>
+            {
+                var stc = new StackLayout() { BackgroundColor = Color.Blue };
+                var lbl = new Label();
+                lbl.SetBinding(Label.TextProperty, "Text");
+                stc.Children.Add(lbl);
+                return stc;
+            });
+            auto.SelectedItemTemplate =  new DataTemplate(() =>
             {
                 var stc = new StackLayout() { BackgroundColor = Color.Blue };
                 var lbl = new Label();
@@ -77,8 +85,10 @@ Like
 | SelectedItemTemplate | You can customize the visuals of the selected items. |
 | SelectItem  | When an dropdown item is selected, properties of that item and the index returns. |
 | SelectSameItem  | When an dropdown selected item is similar, properties of that item and the index returns.  |
-| DeletedItem  | When an selected item is deleted, properties of that item and the index returns. |
+| BackButtonPressDelete  | When an delete item with back button of that item and the index returns. |
 | TextChanged  | Triggered when text changes.. |
+| ClickSelectedItem  | Triggered when click selected item.. |
+
 
 
 
