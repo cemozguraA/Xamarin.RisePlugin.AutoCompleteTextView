@@ -11,7 +11,7 @@
              xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:trans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              xmlns:cntlrs="clr-namespace:Xamarin.RisePlugin.AutoCompleteTextView;assembly=Xamarin.RisePlugin.AutoCompleteTextView"
-             BackgroundColor="Bisque"
+             BackgroundColor="#505050"
              >
     <StackLayout >
         <cntlrs:AutoCompleteTextView ItemsSource="{Binding .}" SeparatorColor="#333333" 
