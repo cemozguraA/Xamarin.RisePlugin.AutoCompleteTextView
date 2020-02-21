@@ -72,6 +72,7 @@ Like
 | BorderColor  | Set editor border color. |
 | BorderThickness  | Set editor border thickness. |
 | BackButtonPressDeleteSelected  | Clicking back button deletes last selected item. |
+| ClickDeleteSelected  | Delets clicked item. |
 | SeparatorColor  | Set separator color dropdown. |
 | SeparatorThickness  | Set separator thickness dropdown. |
 | SameItemControl  | Checks selected items, will skip item if this is an already existing one. (Only work SelectionMode.Multiple) |
