@@ -26,6 +26,7 @@
                                     SelectionMode="Multiple"
                                     SelectAfterText="Clear"
                                      FontSize="18"
+                                     ClickDeleteSelected="True"
                                 >
             <cntlrs:AutoCompleteTextView.SelectedItemTemplate>
                 <DataTemplate>
