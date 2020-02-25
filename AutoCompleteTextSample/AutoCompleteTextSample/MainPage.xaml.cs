@@ -148,10 +148,5 @@ namespace sample
             //list2.RemoveAt(2);
             list2.Clear();
         }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-          
-        }
     }
 }
