@@ -54,9 +54,6 @@
                 <rise:AutoCompleteTextView.SelectedItemTemplate>
                     <DataTemplate>
                         <panc:PancakeView BackgroundGradientStartColor="#CC8B12" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="8,0" BackgroundGradientEndColor="#CC8E1C" BackgroundGradientAngle="80" CornerRadius="15">
-                            <panc:PancakeView.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
-                            </panc:PancakeView.GestureRecognizers>
                             <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="5">
                                 <ff:CachedImage Source="{Binding Image}"  HeightRequest="30" WidthRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,0,0,0" Aspect="Fill">
                                     <ff:CachedImage.Transformations>
