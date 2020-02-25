@@ -76,6 +76,7 @@ Like
 | SeparatorColor  | Set separator color dropdown. |
 | SeparatorThickness  | Set separator thickness dropdown. |
 | SameItemControl  | Checks selected items, will skip item if this is an already existing one. (Only work SelectionMode.Multiple) |
+| SearchType  | Set searching criteria |
 | NamePath  | Type the name you want to show up in the dropdown. |
 | SelectionMode  | You can select none, single or multiple items. |
 | RowHeight  | Set dropdown rows height |
